@@ -293,13 +293,12 @@ elif page == "📷 Live AI Training":
     st.info(f"Room Created: {room}")
 
     webrtc_streamer(
-        key=room,
-        video_processor_factory=SignProcessor,
-        media_stream_constraints={
-            "video": True,
-            "audio": True
-        }
-    )
+    key="example",
+    rtc_configuration={
+        "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
+    }
+   
+)
 
     st.markdown("## Live Translation")
 
