@@ -2,5 +2,5 @@
 streamlit-webrtc
 tornado==6.3.3
 opencv-python-headless
-mediapipe
+mediapipe==0.10.14
 joblib
